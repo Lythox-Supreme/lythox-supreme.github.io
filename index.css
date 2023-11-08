@@ -10,3 +10,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.enlarge-on-hover {
+    transition: transform 0.2s; /* Add a smooth transition effect */
+}
+
+.enlarge-on-hover:hover {
+    transform: scale(1.05); /* Increase the size when hovering */
+}
