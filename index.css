@@ -2,7 +2,26 @@ body {
     font-size: 24px;
     margin: 0px;
     font-family: Fira Sans, Helvetica, Arial, sans-serif;
+    margin-top: 80px;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+nav a {
+    color: #000; 
+    text-decoration: none; 
+}
+
+nav a:hover {
+    color: #007bff; 
+}
+
 
 h1 {
     font-size: 64px;
