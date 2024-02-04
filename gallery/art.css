@@ -15,7 +15,11 @@ h1 {
     gap: 20px;
     margin-top: 20px;
     max-width: 70rem;
+
+    
 }
+
+
 
 .render {
     width: 100%;
@@ -23,6 +27,15 @@ h1 {
     /*border: 1px solid #ddd;*/
     padding: 10px;
     margin: 100px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.render.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .render img {
