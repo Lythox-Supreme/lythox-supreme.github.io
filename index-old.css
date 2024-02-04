@@ -1,0 +1,32 @@
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #FFF;
+    color: #fff;
+    background-color: #04093b;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.card-title {
+    text-align: left;
+    font-size: 70px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.enlarge-on-hover {
+    transition: transform 0.2s;
+    /* Add a smooth transition effect */
+}
+
+.enlarge-on-hover:hover {
+    transform: scale(1.05);
+    /* Increase the size when hovering */
+}
