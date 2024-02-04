@@ -104,7 +104,10 @@ section {
     background-color: #ffc832;
     border-color: #ffc832;
     width: 100%;
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     height: auto;
     font-size: 1.3rem;
     margin-top: 20px;
