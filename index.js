@@ -3,13 +3,30 @@ console.log("hellow world");
 
 document.addEventListener('DOMContentLoaded', function () {
     const carousel = document.querySelector('.moving-carousel');
-    let rotateValue = 0;
+    
+    mouseOverCarousel = false;
+
+    carousel.addEventListener('mouseover', () => {
+        mouseOverCarousel = true;
+    });
+    
+    carousel.addEventListener('mouseout', () => {
+        mouseOverCarousel = false;
+    });
 
     currentPosition=0;
     speed=-0.01;
+    //lastTimeStamp=performance.now();
 
     function rotateCarousel() {
-        currentPosition += speed; // Adjust the speed by changing the value
+        //deltaTime = performance.now() - lastTimeStamp;
+        if(mouseOverCarousel){
+            currentPosition += speed * 0.5;
+        }else{
+            currentPosition += speed;
+        }
+        
+        //lastTimeStamp=performance.now();
 
         if (currentPosition <= -80) {
             speed*=-1;
