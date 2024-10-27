@@ -61,7 +61,7 @@ section {
 }
 
 .social-logo {
-    width: 32px;
+    width: 64px;
     margin-left: 10px;
 }
 
@@ -182,7 +182,7 @@ section {
 
 .blue {
     background-color: #40A2E3;
-    color: black;
+    color: white;
 }
 
 .light-blue {
